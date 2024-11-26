@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  height: 100%;
+
+  color: #334155;
+  background-color: #fff7f2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  height: 100%;
+  background-color: #fff7f2;
+}
+
+a {
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+}
+a:hover {
+  color: #334155;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #111112;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #475569;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #111112;
+}
+
+label {
+  color: #475569;
+}
+
+.custom-focus-visible:focus-visible {
+  border-color: #e0eaf0 !important;
+}
+
+.calc-aside-height {
+  height: calc(100vh - 64px) !important;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #111112;
+    background-color: #fff7f2;
+    height: 100%;
+  }
+  a:hover {
+    color: #334155;
+  }
+  button {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
