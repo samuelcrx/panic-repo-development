@@ -7,7 +7,7 @@ import {
   faAnglesRight,
   faEllipsis,
 } from "@fortawesome/free-solid-svg-icons";
-import { UpdateUserForm } from "../UpdateUserForm";
+import { UpdateUserForm } from "../UpdateUserForm/UpdateUserForm";
 
 const users = [
   {

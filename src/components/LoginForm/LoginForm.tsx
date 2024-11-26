@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ForgetPasswordForm } from "../ForgetPasswordForm";
-import { Input } from "../Input";
+import { ForgetPasswordForm } from "../ForgetPasswordForm/ForgetPasswordForm";
+import { Input } from "../Input/Input";
 import { Bounce, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Header } from "../../components/Header";
-import { SideBar } from "../../components/SideBar";
-import { UsersTable } from "../../components/UsersTable";
+import { useState } from "react";
+import { Header } from "../../components/Header/Header";
+import { UsersTable } from "../../components/UsersTable/UsersTable";
+import Container from "../../components/Container/Container";
+import SideBar from "../../components/SideBar/SideBar";
 
 export const Home: React.FC = () => {
   const [tab, setTab] = useState("users");
@@ -11,18 +12,10 @@ export const Home: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <>
       <Header />
-      {/* <div className="flex h-full">
-        <div className="flex-1">
-          <SideBar selectedTab={tab} handleTab={handleTab} />
-        </div>
-        <div className="flex-1">
-            <div className="w-screen pr-[26px] pt-[16px] pl-[26px] h-full">
-              {tab === "users" && <UsersTable />}
-            </div>
-        </div>
-      </div> */}
-    </div>
+      <SideBar selectedTab={tab} handleTab={handleTab} />
+      <Container>{tab === "users" && <UsersTable />}</Container>
+    </>
   );
 };
