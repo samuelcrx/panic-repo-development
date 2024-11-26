@@ -12,8 +12,18 @@ export const Header: FC = () => {
 
   return (
     <header
-      className="flex justify-between items-center bg-white p-4 shadow-md border-b border-borderGray"
-      style={{ maxHeight: "64px", padding: "14px 46px" }}
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        maxHeight: "64px",
+        padding: "14px 46px",
+        position: "fixed",
+        background: "white",
+        boxShadow: "0 4px 6px #00000018",
+        borderBottom: "1px solid #c7cfd4",
+        width: "100%",
+        zIndex: 10,
+      }}
     >
       <div className="flex items-center">
         <img

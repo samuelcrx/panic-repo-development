@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Input } from "../Input";
+import { Input } from "../Input/Input";
 
 interface ForgetPasswordFormProps {
   handleSubmit: (event: React.FormEvent) => void;
